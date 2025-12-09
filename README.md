@@ -1,0 +1,2 @@
+# ThorneticaPresskit
+PressKit for Thornetica
