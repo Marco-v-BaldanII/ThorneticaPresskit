@@ -51,6 +51,35 @@
         border: 1px solid #dcd0b9;
         background: white;
       }
+
+      /* FLASHY PROJECT LINK - High Visibility */
+      .cta-container {
+        margin: 25px 0;
+        text-align: left;
+      }
+
+      .project-button {
+        display: inline-block;
+        background: #4a3728; /* Dark ink brown */
+        color: #fdf6e3 !important; /* Parchment text */
+        padding: 18px 30px;
+        text-decoration: none !important;
+        font-weight: bold;
+        font-size: 1.3em;
+        border-radius: 4px;
+        border: 2px solid #2b1d12;
+        transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .project-button:hover {
+        background: #8c6339; /* Lighter brown on hover */
+        transform: translateY(-3px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        color: #fff !important;
+      }
     </style>
   </head>
   <body>
@@ -129,6 +158,12 @@
               <h2 id="description">Description</h2>
               <p>Forbidden Candy Games is a Spanish independent game studio founded in 2025, dedicated to creating compelling, narrative-driven experiences like Thornetica.</p>
               
+              <div class="cta-container">
+                <a href="Thornetica/index.html" class="project-button">
+                  CLICK HERE FOR THE THORNETICA GAME PAGE &raquo;
+                </a>
+              </div>
+
               <h2 id="history">History</h2>
               
               <h3>Studio Foundation (Q4 2025)</h3>
