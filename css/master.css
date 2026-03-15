@@ -16,7 +16,6 @@ html {
 
 body {
   position: relative;
-
   min-height: 100vh;
   margin: 0;
 }
@@ -27,12 +26,13 @@ body {
 
 html {
   color: #444444;
-
   font: 62.5%/1.6 "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 body {
   font-size: 1.26em;
+  /* CAMBIO: Color de fondo tipo pergamino suave */
+  background-color: #fdfaf3; 
 }
 
 h1,
@@ -57,13 +57,11 @@ h2 {
 
 h1 {
   margin: 0;
-
   font-size: 2.8em;
 }
 
 h2 {
   margin: 25px 0 15px 0;
-
   font-size: 1.9em;
 }
 
@@ -158,7 +156,6 @@ body {
 .clearfix::after {
   display: table;
   clear: both;
-
   content: " ";
 }
 
@@ -173,13 +170,11 @@ body {
 a,
 a:visited {
   color: #0077dd;
-
   text-decoration: none;
 }
 
 a:hover {
   color: #005599;
-
   text-decoration: underline;
 }
 
@@ -210,7 +205,6 @@ a:hover {
 
 .nav__title {
   padding: 0 15px;
-
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   line-height: 1;
 }
@@ -219,7 +213,6 @@ a:hover {
 .nav__title a:visited,
 .nav__title a:hover {
   color: inherit;
-
   text-decoration: none;
 }
 
@@ -229,23 +222,19 @@ a:hover {
 
 .nav__list {
   padding: 0;
-
   list-style: none;
 }
 
 .nav__item,
 .nav__item:visited {
   display: block;
-
   padding: 5px 15px;
-
   color: inherit;
 }
 
 .nav__item:hover {
   color: inherit;
   background: rgba(0, 0, 0, 0.05);
-
   text-decoration: none;
 }
 
@@ -260,38 +249,29 @@ a:hover {
 
 .nav__toggle {
   display: none;
-
   margin: 15px 0;
   padding: 0 15px;
 }
 
 .nav__toggle .button {
   display: block;
-
   height: 30px;
 }
 
-/* Nav list variant for hamburger feature. */
 .nav__list--slider {
   overflow-y: hidden;
-
   max-height: 0;
-
   -webkit-transition: max-height 0.5s ease-in-out;
-     -moz-transition: max-height 0.5s ease-in-out;
-       -o-transition: max-height 0.5s ease-in-out;
-          transition: max-height 0.5s ease-in-out;
+  -moz-transition: max-height 0.5s ease-in-out;
+  -o-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
 }
-
 
 @media (min-width: 800px) {
   .nav__toggle {
-    /* Always hide the button on big screens. */
     display: none !important;
   }
-
   .nav__list--slider {
-    /* Always show the list on big screens. So disable slider. */
     max-height: unset !important;
   }
 }
@@ -303,14 +283,12 @@ a:hover {
 .block {
   margin-bottom: 15px;
   padding-bottom: 15px;
-
   border-bottom: 1px solid rgb(221, 221, 221);
 }
 
 .block__notice {
   margin-bottom: 15px;
   padding: 10px;
-
   color: #027194;
   background: #ebf7fd;
   border: 1px solid rgba(45,112,145,0.3);
@@ -331,15 +309,13 @@ a:hover {
     display: -ms-flexbox;
     display: flex;
   }
-
   .grid__item:not(:first-child) {
     padding-left: 25px;
   }
-
   .grid__item--flexible {
     -webkit-box-flex: 1;
     -ms-flex: 1;
-        flex: 1;
+    flex: 1;
   }
 }
 
@@ -349,13 +325,11 @@ a:hover {
 
 .gallery {
   margin-left: -25px;
-
-  font-size: 0; /* Disable the small space below the images. */
+  font-size: 0;
 }
 
 .gallery__item {
   float: left;
-
   width: 100%;
   padding-bottom: 25px;
   padding-left: 25px;
@@ -367,7 +341,6 @@ a:hover {
 
 .gallery__item a[href$=".gif"] {
   position: relative;
-
   display: block;
 }
 
@@ -380,17 +353,12 @@ a:hover {
   z-index: 1;
   top: 0;
   left: 0;
-
   display: none;
-
   width: 100%;
   height: 100%;
   padding: 20px;
-
   background: rgba(0, 0, 0, 0.25);
-
   content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAABGdBTUEAALGPC/xhBQAAAFFQTFRFAAAA/////////////////////////////Pz8/Pz8/Pz8/f39/f39/f39/f39/f39/f39/Pz8/Pz8/Pz8/Pz8/v7+/f39/f39/f39/f39/f395zF2nQAAABt0Uk5TAAEJCxQeIEpXYGFnc3V2d5WarK2/xNLb3N3m8ZFI2gAAAOlJREFUOMuVlckOgzAMRAdIWUrKUgK4/v8P7QWVLA64c0RPY9mxByBQ3U/LSrQuU18jKzM49uQGI2KVJY5Etkq5ZmNBWxNhheWMbOFz5cxZzaXnd8Exz6en5UvZXx98o6OjarsDtyop/Hrnixt/zm3x/AggGQCj/6UFHpLpAMBFICRTB9Qcg6JpjV4ABdMekwSmphMWGUTRBaYL1gwYma6gLBiYEvYr8HTZ9aXzzVDYjHo88sA7SgaufkJhKRI7Zgdg0K5ZtLiC3bG46lPQH5f6XPUBoI8UdUjpY08fpH9EMwAzqsL+5vfxBcKnb1vURTbUAAAAAElFTkSuQmCC");
-
   align-items: center;
   justify-content: center;
 }
@@ -421,15 +389,13 @@ a:hover {
 
 .video-player {
   position: relative;
-
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;
 }
 
 .video-player__frame {
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
 }
@@ -460,11 +426,9 @@ a:hover {
 
 .button {
   display: inline-block;
-
   padding: 5px 10px;
-
   background: -webkit-linear-gradient(top, white, #fafafa);
-  background:         linear-gradient(to bottom, white, #fafafa);
+  background: linear-gradient(to bottom, white, #fafafa);
   border: 1px solid #cccccc;
   border-radius: 5px;
 }
@@ -482,7 +446,7 @@ a:hover {
 .button:active {
   color: white;
   background: -webkit-linear-gradient(top, #3398ff, #0077dd);
-  background:         linear-gradient(to bottom, #3398ff, #0077dd);
+  background: linear-gradient(to bottom, #3398ff, #0077dd);
 }
 
 /* ---------------------------------------------------------- *\
@@ -518,7 +482,6 @@ a:hover {
 .widget--bandcamp {
   width: 100%;
   height: 120px;
-
   border: 0;
 }
 
@@ -530,4 +493,32 @@ a:hover {
   ._team-fix-margin-top {
     margin-top: -15px;
   }
+}
+
+/* ---------------------------------------------------------- *\
+ * THORNETICA PORTRAIT FIX - PARCHE DE TRANSMARECCI
+\* ---------------------------------------------------------- */
+
+/* Elimina cualquier fondo blanco o borde de las imágenes de personajes */
+.grid__item img, 
+.gallery__item img, 
+.page-wrapper img {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* El truco del "Multiply" para fundir el dibujo con el fondo de pergamino */
+/* Esto hará que el blanco del PNG se vuelva invisible sobre el color crema */
+.grid__item img, 
+.gallery__item img {
+  mix-blend-mode: multiply;
+  filter: contrast(1.1); /* Un toque de contraste extra para que el pixel art resalte */
+}
+
+/* Si usas fotos de equipo, evita que se mezclen demasiado */
+.logo img, 
+.page-header img {
+  mix-blend-mode: normal !important;
 }
