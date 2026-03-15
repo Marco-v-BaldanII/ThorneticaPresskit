@@ -10,12 +10,57 @@
     
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/master.css">
+
+    <style>
+      /* MANUSCRIPT THEME - Only changing colors, not layout */
+      body {
+        background: #fdf6e3; /* Soft parchment yellow */
+        background-image: linear-gradient(to bottom, #fdf6e3, #f4ecd8); 
+        color: #4a3728; /* Dark ink brown */
+      }
+      
+      .page-nav, .page-wrapper {
+        background: transparent !important;
+      }
+
+      h1, h2, h3, dt {
+        color: #2b1d12 !important; /* Deep chocolate for headers */
+      }
+
+      a {
+        color: #8c6339;
+        text-decoration: underline;
+      }
+
+      a:hover {
+        color: #5d4023;
+      }
+
+      /* Spacing fixes you had before */
+      .page-header {
+        padding-top: 10px !important;
+        margin-top: 0 !important;
+        border-bottom: 1px solid #dcd0b9;
+      }
+      .page-wrapper {
+        padding-top: 20px !important;
+      }
+
+      /* Keeping your sidebar portraits clean */
+      aside img {
+        border: 1px solid #dcd0b9;
+        background: white;
+      }
+    </style>
   </head>
   <body>
     <div class="page grid">
       <nav class="page-nav nav grid__item">
         <h1 class="nav__title">
-          <a href="..">Forbidden Candy Games</a>
+          <a href=".." style="display: flex; align-items: center; gap: 8px;">
+            <img src="images/ForbiddenCandyLogo.png" alt="Studio Logo" style="width: 64px; height: 64px; border-radius: 4px;">
+            Forbidden Candy Games
+          </a>
         </h1>
       
         <aside class="nav__subtitle">
@@ -37,6 +82,7 @@
           <li><a class="nav__item" href="#factsheet">Factsheet</a></li>
           <li><a class="nav__item" href="#description">Description</a></li>
           <li><a class="nav__item" href="#videos">Videos</a></li>
+          <li><a class="nav__item" href="#characters">Meet the Cast</a></li>
           <li><a class="nav__item" href="#images">Images</a></li>
           <li><a class="nav__item" href="#logo">Logo & Capsule Art</a></li>
           <li><a class="nav__item" href="#about">About</a></li>
@@ -47,7 +93,7 @@
 
       <div class="page-wrapper grid__item">
         <header class="page-header">
-          <img src="images/YOUR_HEADER_IMAGE.png" alt="Thornetica" title="Thornetica">
+          <img src="images/logo.png" alt="Thornetica" title="Thornetica">
         </header>
 
         <main class="page-content" role="main">
@@ -85,6 +131,90 @@
               <div class="video-player">
                 <iframe class="video-player__frame" src="https://www.youtube.com/embed/wPmBbSJE07s" frameborder="0" allowfullscreen></iframe>
               </div>
+
+              <h2 id="characters" style="margin-top: 40px;">Meet the Cast</h2>
+
+              <div style="display: flex; align-items: center; margin-bottom: 20px; gap: 15px;">
+                <img src="images/ArchiePortrait.png" alt="Archie" style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <h3 style="margin: 0; font-size: 1.1em;">Archie</h3>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>INTJ</strong> He/him</p>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>Hobbies:</strong> Chess, Live opera, Books</p>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; margin-bottom: 20px; gap: 15px;">
+                <img src="images/BonniePortrait.png" alt="Bonnie" style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <h3 style="margin: 0; font-size: 1.1em;">Bonnie</h3>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>ESFJ</strong> She/Her</p>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>Hobbies:</strong> Cartoons, Knitting, Pets</p>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; margin-bottom: 20px; gap: 15px;">
+                <img src="images/CarlaPortrait.png" alt="Carla" style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <h3 style="margin: 0; font-size: 1.1em;">Carla</h3>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>ENTJ</strong> She/Her</p>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>Hobbies:</strong> Robotics, Politics, Perfection</p>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; margin-bottom: 20px; gap: 15px;">
+                <img src="images/EmmiPortrait.png" alt="Emmi" style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <h3 style="margin: 0; font-size: 1.1em;">Emmi</h3>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>ISFP</strong> She/Her</p>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>Hobbies:</strong> Kendo, Baking, Loud music</p>
+                </div>
+              </div>
+              
+              <div style="display: flex; align-items: center; margin-bottom: 20px; gap: 15px;">
+                <img src="images/LorelaiPortrait.png" alt="Lorelai" style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <h3 style="margin: 0; font-size: 1.1em;">Lorelai</h3>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>ISTJ</strong> She/They</p>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>Hobbies:</strong> Writing, Soap Operas, Puzzles</p>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; margin-bottom: 20px; gap: 15px;">
+                <img src="images/LucaPortrait.png" alt="Luca" style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <h3 style="margin: 0; font-size: 1.1em;">Luca</h3>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>INFJ</strong> He/Him</p>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>Hobbies:</strong> Photography, History, Videogames</p>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; margin-bottom: 20px; gap: 15px;">
+                <img src="images/NicoPortrait.png" alt="Nico" style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <h3 style="margin: 0; font-size: 1.1em;">Nico</h3>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>INFP</strong> They/Them</p>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>Hobbies:</strong> Graffiti, Urban fashion, Gardening</p>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; margin-bottom: 20px; gap: 15px;">
+                <img src="images/NoahPortrait.png" alt="Noah" style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <h3 style="margin: 0; font-size: 1.1em;">Noah</h3>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>ENFJ</strong> They/Them</p>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>Hobbies:</strong> Cooking, Videogames, Horror movies</p>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; margin-bottom: 20px; gap: 15px;">
+                <img src="images/WolfgangPortrait.png" alt="Wolfgang" style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <h3 style="margin: 0; font-size: 1.1em;">Wolfgang</h3>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>ESFP</strong> He/Him</p>
+                  <p style="margin: 2px 0 0; font-size: 0.85em; opacity: 0.8;"><strong>Hobbies:</strong> Expensive dining, Animal care, Sailing</p>
+                </div>
+              </div>
+
             </aside>
 
             <article class="description grid__item">
@@ -93,8 +223,6 @@
               
               <h2 id="how-to-play">How's the Game Played?</h2>
 
-              
-
               <h3>Classic SRPG Combat (With a Twist!)</h3>
               <p>You'll be dropped into the middle of the fray in the game's first chapter, "Jack Cade's Revolt," with some classic SRPG combat waiting for you. Move all your units during your phase and prepare for the enemy phase. We've got 6 different unit classes (Cavaliers, Archers, Swordfighters, Priests, Engineers, and... Trees?). But wait, this isn't a battlefield at all—it's a theater!</p>
               <p><img src="images/Screensh1.png" alt="Thornetica Tactical Combat Screen" style="margin-bottom: 15px; border: 1px solid #ddd;"></p>
@@ -102,7 +230,6 @@
               <h3>Backstage Socializing & Minigames</h3>
               <p>Once a map has been cleared, you'll be thrown into the theater's backstage lounge. In this quaint, cozy place, you have finite social actions to engage with the other members and grow closer to them. Increase your maturity, honesty, and comradery by playing minigames like pool or air hockey. And be on the lookout for shops, quests, and other events to engage with.</p>
               <p><img src="images/Screensh5.png" alt="Thornetica Tactical Combat Screen" style="margin-bottom: 15px; border: 1px solid #ddd;"></p>
-
 
               <h3>Cast Your Own Play</h3>
               <p>What separates Thornetica from any other tactics game is that you're able to change who plays each character in the play, which will affect their stats as well as the dialogue between characters. It's up to you to find the best—or memiest—character to play as the Duke of York!</p>
@@ -123,59 +250,22 @@
           
             <div class="gallery clearfix" id="gallery">
               <div class="gallery__item">
-                <a href="images/Screensh1.png">
-                  <img src="images/Screensh1.png" alt="Thornetica Gameplay 1">
-                </a>
+                <a href="images/Screensh1.png"><img src="images/Screensh1.png" alt="Thornetica Gameplay 1"></a>
               </div>
               <div class="gallery__item">
-                <a href="images/Screensh2.png">
-                  <img src="images/Screensh2.png" alt="Thornetica Gameplay 2">
-                </a>
+                <a href="images/Screensh2.png"><img src="images/Screensh2.png" alt="Thornetica Gameplay 2"></a>
               </div>
               <div class="gallery__item">
-                <a href="images/Screensh3.png">
-                  <img src="images/Screensh3.png" alt="Thornetica Gameplay 3">
-                </a>
+                <a href="images/Screensh3.png"><img src="images/Screensh3.png" alt="Thornetica Gameplay 3"></a>
               </div>
               <div class="gallery__item">
-                <a href="images/Screensh4.png">
-                  <img src="images/Screensh4.png" alt="Thornetica Gameplay 4">
-                </a>
+                <a href="images/Screensh4.png"><img src="images/Screensh4.png" alt="Thornetica Gameplay 4"></a>
               </div>
               <div class="gallery__item">
-                <a href="images/Screensh5.png">
-                  <img src="images/Screensh5.png" alt="Thornetica Gameplay 5">
-                </a>
+                <a href="images/Screensh5.png"><img src="images/Screensh5.png" alt="Thornetica Gameplay 5"></a>
               </div>
               <div class="gallery__item">
-                <a href="images/Screensh6.png">
-                  <img src="images/Screensh6.png" alt="Thornetica Gameplay 6">
-                </a>
-              </div>
-              <div class="gallery__item">
-                <a href="images/Screensh7.png">
-                  <img src="images/Screensh7.png" alt="Thornetica Gameplay 7">
-                </a>
-              </div>
-              <div class="gallery__item">
-                <a href="images/Screensh8.png">
-                  <img src="images/Screensh8.png" alt="Thornetica Gameplay 8">
-                </a>
-              </div>
-              <div class="gallery__item">
-                <a href="images/Screensh9.png">
-                  <img src="images/Screensh9.png" alt="Thornetica Gameplay 9">
-                </a>
-              </div>
-              <div class="gallery__item">
-                <a href="images/Screensh10.png">
-                  <img src="images/Screensh10.png" alt="Thornetica Gameplay 10">
-                </a>
-              </div>
-              <div class="gallery__item">
-                <a href="images/Screensh11.png">
-                  <img src="images/Screensh11.png" alt="Thornetica Gameplay 11">
-                </a>
+                <a href="images/Screensh6.png"><img src="images/Screensh6.png" alt="Thornetica Gameplay 6"></a>
               </div>
             </div>
           </section>
@@ -183,30 +273,13 @@
           <section class="block">
             <h2 id="logo">Logo & Capsule Art</h2>
             <aside class="block__notice">
-              <a href="images/logo_capsule.zip">
-                download logo files, icon, and capsule art as .zip
-              </a>
+              <a href="images/logo_capsule.zip">download logo files, icon, and capsule art as .zip</a>
             </aside>
             
             <h3>Steam Capsule Art</h3>
-            <a href="images/mainCapsule.png">
-              <img src="images/mainCapsule.png" alt="Thornetica Capsule with logo" class="logo">
-            </a>
-
-            <h3>Steam Capsule Art (No Logo)</h3>
-            <a href="images/ThorneticaArtwork.png">
-              <img src="images/ThorneticaArtwork.png" alt="Thornetica Capsule without logo">
-            </a>
-
+            <a href="images/mainCapsule.png"><img src="images/mainCapsule.png" alt="Thornetica Capsule with logo" class="logo"></a>
             <h3>Game Logo</h3>
-            <a href="images/logo.png">
-              <img src="images/logo.png" alt="Thornetica title logo">
-            </a>
-
-            <h3>Desktop Logo</h3>
-            <a href="images/Th96.png">
-              <img src="images/Th96.png" alt="Thornetica Desktop logo">
-            </a>
+            <a href="images/logo.png"><img src="images/logo.png" alt="Thornetica title logo"></a>
           </section>
           
           <section class="block">
@@ -214,8 +287,6 @@
             <dl>
               <dt>Boilerplate</dt>
               <dd>Forbidden Candy Games is a Spanish independent game studio founded in 2025, dedicated to creating compelling, narrative-driven experiences like Thornetica.</dd>
-              <dt>More information</dt>
-              <dd>More information on Forbidden Candy Games, our logo & relevant media are available <a href="..">here</a>.</dd>
             </dl>
           </section>
           
@@ -235,8 +306,7 @@
               <dl>
                 <dt>Marco Baldan</dt>
                 <dd>
-                  <a href="mailto:marcoxativa@gmail.com">marcoxativa@gmail.com</a><br>
-                  <a href="https://www.linkedin.com/in/marcobaldanpardo/">linkedin.com/in/marcobaldanpardo/</a>
+                  <a href="mailto:marcoxativa@gmail.com">marcoxativa@gmail.com</a>
                 </dd>
               </dl>
             </article>
@@ -244,7 +314,7 @@
         </main>
 
         <footer class="page-footer">
-          <a href="https://github.com/pixelnest/presskit.html">presskit.html</a> by <a href="http://pixelnest.io">Pixelnest Studio</a> — original <a href="http://dopresskit.com/">presskit()</a> by Rami Ismail (<a href="http://www.vlambeer.com/">Vlambeer</a>)
+          <a href="https://github.com/pixelnest/presskit.html">presskit.html</a> by <a href="http://pixelnest.io">Pixelnest Studio</a>
         </footer>
       </div>
     </div>
@@ -261,28 +331,6 @@
               new Masonry(gallery, { itemSelector: '.gallery__item' });
             });
           })(i);
-        }
-
-        var gifLinks = document.querySelectorAll('a[href$=".gif"]');
-        for (var i = 0; i < gifLinks.length; i++) {
-          (function (index) {
-            var link = gifLinks[index];
-            var img = link.querySelector('img');
-            if (img.src.indexOf('.thumb.jpg') === -1) return;
-            link.className = 'show-overlay';
-            link.onclick = function (e) {
-              if (e.preventDefault) {
-                const openLinkInBackground = e.ctrlKey || e.metaKey;
-                if (!openLinkInBackground) e.preventDefault();
-                e.stopPropagation();
-              } else {
-                e.returnValue = false;
-              }
-              link.className = '';
-              img.src = img.src.replace('.thumb.jpg', '');
-              link.onclick = null;
-            }
-          }(i));
         }
       });
     </script>
