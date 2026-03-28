@@ -51,6 +51,38 @@
         border: 1px solid #dcd0b9;
         background: white;
       }
+
+      /* Logo & Capsule Art Grid */
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: rgba(0,0,0,0.03);
+        padding: 10px;
+        border-radius: 8px;
+      }
+      .grid-item h3 {
+        font-size: 1rem;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      .grid-item img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 4px;
+        transition: transform 0.2s;
+      }
+      .grid-item img:hover {
+        transform: scale(1.02);
+      }
     </style>
   </head>
   <body>
@@ -276,10 +308,24 @@
               <a href="images/logo_capsule.zip">download logo files, icon, and capsule art as .zip</a>
             </aside>
             
-            <h3>Steam Capsule Art</h3>
-            <a href="images/mainCapsule.png"><img src="images/mainCapsule.png" alt="Thornetica Capsule with logo" class="logo"></a>
-            <h3>Game Logo</h3>
-            <a href="images/logo.png"><img src="images/logo.png" alt="Thornetica title logo"></a>
+            <div class="image-grid">
+              <div class="grid-item">
+                <h3>Steam Capsule Art</h3>
+                <a href="images/mainCapsule.png"><img src="images/mainCapsule.png" alt="Thornetica Capsule with logo" class="logo"></a>
+              </div>
+              <div class="grid-item">
+                <h3>Game Logo</h3>
+                <a href="images/logo.png"><img src="images/logo.png" alt="Thornetica title logo"></a>
+              </div>
+              <div class="grid-item">
+                <h3>Art - no logo</h3>
+                <a href="images/ThorneticaArtNoLogo.png"><img src="images/ThorneticaArtNoLogo.png" alt="Thornetica art - no logo"></a>
+              </div>
+              <div class="grid-item">
+                <h3>Vertical Capsule</h3>
+                <a href="images/VerticalCapsule.png"><img src="images/VerticalCapsule.png" alt="Thornetica Vertical Capsule"></a>
+              </div>
+            </div>
           </section>
           
           <section class="block">
